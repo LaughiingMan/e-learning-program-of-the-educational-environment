@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.view.TestHelpController">
+   <children>
+      <BorderPane prefHeight="350.0" prefWidth="450.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Всего в тесте присутствует 50 вопросов. Чтобы пройти тест, нужно ответить на все вопросы правильно. Если вы не прошли тест, то вас направят читать &quot;Теория&quot; и после пройти тест снова. И так пока не пройдете тест.&#10;&#10;Учтите также, что учитываются количество попыток, даже если вы выйдете с приложения, результат сохраняется.&#10;&#10;После того, как пройдете тест, результат отправляется на почту, который вы указали при входе в приложение.&#10;&#10;" textAlignment="JUSTIFY" wrappingWidth="481.7265625" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="30.0" />
+               </BorderPane.margin>
+            </Text>
+         </center>
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" onAction="#handleClose" text="Меню">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Закрыть" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

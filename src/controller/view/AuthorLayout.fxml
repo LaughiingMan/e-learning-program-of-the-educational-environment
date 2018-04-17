@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="450.0" prefWidth="750.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.view.AuthorController">
+   <children>
+      <BorderPane prefHeight="450.0" prefWidth="750.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Автор:&#10;Петров Евгений&#10;&#10;Среда разработки:&#10;Программное обеспечение JetBrains IntelliJ IDEA – это ведущая среда быстрой разработки на языке Java. IntelliJ IDEA представляет собой высокотехнологичный комплекс тесно интегрированных инструментов программирования, включающий интеллектуальный редактор исходных текстов с развитыми средствами автоматизации." textAlignment="JUSTIFY" wrappingWidth="603.13671875" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets top="50.0" />
+               </BorderPane.margin>
+            </Text>
+         </center>
+         <bottom>
+            <Button mnemonicParsing="false" onAction="#handleClose" text="Главное меню" BorderPane.alignment="CENTER_RIGHT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="50.0" right="80.0" />
+               </BorderPane.margin>
+            </Button>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

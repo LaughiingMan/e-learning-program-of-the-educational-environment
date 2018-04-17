@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="750.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.view.TheoryController">
+   <children>
+      <BorderPane prefHeight="450.0" prefWidth="750.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="1 раздел">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleSectionOne" text="Образовательная среда" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="2 раздел">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Тема" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="3 раздел">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Тема" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="4 раздел">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Тема" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Меню">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#handleClose" text="Закрыть" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <TextArea fx:id="textOne" editable="false" prefHeight="200.0" prefWidth="200.0" wrapText="true" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="30.0" left="40.0" right="40.0" top="25.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextArea>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

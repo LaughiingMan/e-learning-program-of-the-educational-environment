@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="750.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.view.TaskController">
+   <children>
+      <BorderPane prefHeight="450.0" prefWidth="750.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="Начать">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleStart" text="Начать задание" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleRefresh" text="Начать заново" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Загрузить">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleStartLoad" text="Загрузить свое задание" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Меню">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleClose" text="Главное меню" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Помощь">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#handleHelp" text="О задание" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <right>
+            <VBox alignment="CENTER_LEFT" spacing="45.0" BorderPane.alignment="CENTER">
+               <children>
+                  <CheckBox fx:id="checkBoxOne" mnemonicParsing="false" text=" а)" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBoxTwo" mnemonicParsing="false" text=" б)" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBoxThree" mnemonicParsing="false" text=" в)" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBoxFour" mnemonicParsing="false" text=" г)" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBoxFive" mnemonicParsing="false" text=" д)" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets right="50.0" />
+               </padding>
+            </VBox>
+         </right>
+         <center>
+            <TextArea fx:id="text" prefHeight="200.0" prefWidth="200.0" visible="false" wrapText="true" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="30.0" left="40.0" right="40.0" top="40.0" />
+               </BorderPane.margin>
+            </TextArea>
+         </center>
+         <bottom>
+            <Button fx:id="button" mnemonicParsing="false" onAction="#handleNext" text="Следующий" visible="false" BorderPane.alignment="CENTER_LEFT">
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="40.0" />
+               </BorderPane.margin>
+            </Button>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
