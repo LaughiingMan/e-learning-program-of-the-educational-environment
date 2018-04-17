@@ -1,6 +1,6 @@
 package controller.view;
 
-import controller.HelpList;
+import controller.model.HelpList;
 import controller.MainMenu;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;

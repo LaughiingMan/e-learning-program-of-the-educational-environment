@@ -1,6 +1,6 @@
 package controller.view;
 
-import controller.HelpList;
+import controller.model.HelpList;
 import controller.MainMenu;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -13,11 +13,8 @@ import javafx.stage.Stage;
 
 import java.io.*;
 import java.net.URISyntaxException;
-import java.net.URL;
-import java.net.URLClassLoader;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Enumeration;
 import java.util.List;
 
 /**

@@ -1,4 +1,4 @@
-package controller;
+package controller.model;
 
 /**
  * Created by 777 on 24.02.2018.
